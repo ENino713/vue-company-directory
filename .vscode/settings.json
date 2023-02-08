@@ -37,5 +37,6 @@
   },
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
-  }
+  },
+  "vue3snippets.enable-compile-vue-file-on-did-save-code": true
 }
