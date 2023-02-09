@@ -1,47 +1,25 @@
-<script setup>
-import { ref } from "vue";
-const brand = ref(" Company Directory");
-</script>
-
 <template>
-  <nav>
-    <div class="wrapper">
-      <div class="brand">
-        <span class="brand-title">{{ brand }}</span>
-      </div>
-      <div class="menu">
-        <a href="#" class="menu-item">Departments</a>
-        <a href="#" class="menu-item">Settings</a>
-        <a href="#" class="menu-login">Logout</a>
-      </div>
-    </div>
-  </nav>
+  <div class="wrapper">
+    <input type="text" placeholder="Search Staff Member" class="search" />
+    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+        stroke="currentColor" class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+      </svg>
+    </span>
+  </div>
 </template>
 
 <style scoped lang="postcss">
-nav {
-  @apply flex h-20 bg-slate-900 text-slate-200;
+.wrapper {
+  @apply relative flex w-full items-stretch;
 
-  .wrapper {
-    @apply container mx-auto flex w-full items-center justify-between;
+  .search {
+    @apply rounded-md border-0 px-8 py-4 text-slate-700 placeholder-slate-400 outline-none focus: ring focus:ring-yellow-500;
+  }
 
-    .brand {
-      &-title {
-        @apply text-2xl font-bold text-yellow-500;
-      }
-    }
-
-    .menu {
-      @apply flex gap-2;
-
-      &-item {
-        @apply rounded-md bg-yellow-500 px-4 py-2 text-slate-900;
-      }
-
-      &-login {
-        @apply rounded-md bg-red-500 px-4 py-2 text-red-100;
-      }
-    }
+  .icon {
+    @apply absolute right-0 z-10 py-4 pr-8 text-slate-400;
   }
 }
 </style>
