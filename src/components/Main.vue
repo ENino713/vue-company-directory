@@ -1,11 +1,13 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 import MainSearch from "./MainSearch.vue";
+import MainCards from "./MainCards.vue";
 </script>
 
 <template>
   <div class="wrapper">
     <MainSearch />
+    <MainCards />
     <h1>Hello There</h1>
   </div>
 </template>
