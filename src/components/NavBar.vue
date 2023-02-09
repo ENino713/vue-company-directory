@@ -35,7 +35,7 @@ nav {
       @apply flex gap-2;
 
       &-item {
-        @apply rounded-md px-4 py-2 hover: bg-yellow-500 hover:text-slate-900;
+        @apply rounded-md px-4 py-2 bg-yellow-500 hover: text-slate-900;
       }
 
       &-login {
