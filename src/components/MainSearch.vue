@@ -15,7 +15,7 @@
   @apply relative flex w-full items-stretch;
 
   .search {
-    @apply rounded-md border-0 px-8 py-4 text-slate-700 placeholder-slate-400 outline-none ring focus: ring-yellow-500;
+    @apply rounded-md border-0 px-8 py-4 text-slate-700 placeholder-slate-400 outline-none ring ring-yellow-500;
   }
 
   .icon {
