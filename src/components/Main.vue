@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
-import MainSearch from './MainSearch.vue'
+import MainSearch from "./MainSearch.vue";
 </script>
 
 <template>

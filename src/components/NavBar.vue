@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from 'vue'
-const brand = ref(' Company Directory')
+import { ref } from "vue";
+const brand = ref(" Company Directory");
 </script>
 
 <template>
@@ -17,6 +17,7 @@ const brand = ref(' Company Directory')
     </div>
   </nav>
 </template>
+
 <style scoped lang="postcss">
 nav {
   @apply flex h-20 bg-slate-900 text-slate-200;
